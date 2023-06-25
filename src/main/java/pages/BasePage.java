@@ -25,6 +25,7 @@ public class BasePage {
 	public static void openUrl() throws InterruptedException {
 		ChromeOptions cap= new ChromeOptions();
 		cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+		cap.addArguments ("headless");
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver(cap);
 		driver.manage().window().maximize();
