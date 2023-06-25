@@ -9,6 +9,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -22,13 +23,10 @@ public class BasePage {
 	public static String downloadpath;
 	
 	public static void openUrl() throws InterruptedException {
-		//MangoDB.mongoClient();
-		//System.setProperty("webdriver.chrome.driver", "D:\\WS Auto Testing\\DemoQAApp\\Drivers\\chromedriver.exe");
-		WebDriverManager.chromedriver().setup();
-		DesiredCapabilities cap=DesiredCapabilities.chrome();
+		ChromeOptions cap= new ChromeOptions();
 		cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-				
-		driver = new ChromeDriver();
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver(cap);
 		driver.manage().window().maximize();
 		driver.get("https://demoqa.com/");
 		

@@ -1,9 +1,9 @@
-@Elements
 Feature: Elements
 
   Background: 
     Given User is on demo QA site
     When User clicks on "ELEMENTS" st category card
+
   @smoke
   Scenario: Elements - Excel data
     And User click on "Text Box" tab

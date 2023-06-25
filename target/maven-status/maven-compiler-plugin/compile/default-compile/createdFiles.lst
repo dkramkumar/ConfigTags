@@ -1,6 +1,5 @@
 pages\AlertsFrameWindowsPage.class
 pages\ElementsPage.class
 pages\BasePage.class
-pages\FormsPage.class
-pages\WidgetsPage.class
 pages\Demo.class
+pages\Demo1.class

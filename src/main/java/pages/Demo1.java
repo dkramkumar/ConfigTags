@@ -76,7 +76,7 @@ public class Demo1 {
 			System.out.println(driver.getTitle());
 	}
 	
-	public static void brokenLinks() throws MalformedURLException, Exception  {
+	public static void brokenLinks() throws Exception  {
 		System.setProperty("webdriver.chrome.driver", "D:\\WS Auto Testing\\DemoQAApp\\Drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -215,7 +215,7 @@ public class Demo1 {
 		}
 	}
 	
-	public static void main(String args[]) throws MalformedURLException, Exception  {
+	public static void main(String[] args) throws Exception  {
 		Demo1.readFileUsingScanner();
 		
 	}

@@ -106,7 +106,7 @@ public class Demo extends BasePage {
 		driver.get("https://www.facebook.com/AmazonIN");
 		
 	}
-	public static void main (String args[]) throws Exception  {
+	public static void main (String[] args) throws Exception  {
 		Demo.getBrokenLinks();
 	}
 

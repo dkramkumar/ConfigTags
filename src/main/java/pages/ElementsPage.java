@@ -243,7 +243,7 @@ public class ElementsPage extends BasePage{
 	
 	//********************** Broken Links ********************************//
 	
-	public static void isImageBroken() throws ClientProtocolException, IOException, InterruptedException {
+	public static void isImageBroken() throws IOException, InterruptedException {
 		Thread.sleep(2000);
 		WebElement imageFile = driver.findElement(By.xpath("//div//p[contains(text(), 'Broken image')]/following::img[1]"));
 		if (imageFile.getAttribute("naturalWidth").equals("0"))

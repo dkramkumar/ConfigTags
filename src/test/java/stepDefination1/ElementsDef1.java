@@ -196,7 +196,7 @@ public class ElementsDef1 extends BasePage{
 	//******************** Broken Links ***********************************//
 	
 	@Then("User validate the broken image")
-	public void user_validate_the_broken_image() throws ClientProtocolException, IOException, InterruptedException {
+	public void user_validate_the_broken_image() throws IOException, InterruptedException {
 		ElementsPage.isImageBroken();
 		Thread.sleep(1000);
 	}
