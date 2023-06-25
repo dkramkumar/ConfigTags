@@ -1,0 +1,25 @@
+{ 
+"forms":[ 
+	{ 
+		"firstname": "Ram",
+		"lastname": "Kumar",
+		"email": "ramkumardkr@gmail.com",
+		"mobilenumber": "7981586060",
+		"currentaddress": "7-17-345/1"
+	},
+	{ 
+		"firstname": "Dhanush",
+		"lastname": "Sai",
+		"email": "dhanush@gmail.com",
+		"mobilenumber": "7981586161",
+		"currentaddress": "7-17-345/2"
+	},
+	{ 
+		"firstname": "Gowtham",
+		"lastname": "Sai",
+		"email": "gowtham@gmail.com",
+		"mobilenumber": "7981586262",
+		"currentaddress": "7-17-345/3"
+	}
+]
+}
