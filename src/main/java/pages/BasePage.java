@@ -31,8 +31,7 @@ public class BasePage {
 		driver.get("https://demoqa.com/");
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		System.out.println("INFO: The title of the page is : " +driver.getTitle());	
-		driver.findElement(By.xpath("//a[@id='close-fixedban']")).click();
+		System.out.println("INFO: The title of the page is : " +driver.getTitle());
 		Thread.sleep(1000);
 	}
 	
